@@ -87,6 +87,8 @@ const server = app.listen(PORT, () => {
   console.log(`App running on http://localhost:${PORT}`);
 });
 
+console.log("Hello");
+
 const io = require("socket.io")(server, {
   pingTimeout: 60000,
   pingInterval: 50000,
